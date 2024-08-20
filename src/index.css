@@ -1,0 +1,130 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none; 
+  text-rendering: optimizeLegibility; 
+   -webkit-font-smoothing: antialiased; 
+   -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  margin: 0;
+min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  text-align: center;
+}
+
+
+.mainDiv{
+  height: fit-content !important;
+}
+
+.flip-card {
+  
+  background-color: transparent;
+  width: 250px !important;
+  height: 400px  !important;
+  perspective: 1000px;
+  margin: 40px auto ;
+  cursor: pointer;
+}
+.flip-card-inner:hover{
+  box-shadow: -3px 4px 12px 0px grey;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100% ;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0px 3px 0px 0 rgba(0,0,0,0.2);
+  border-radius: 20px !important;
+  
+  
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  padding: 0px !important;
+  margin: 0% !important;
+  
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 20px !important;
+  padding: 0px !important;
+}
+.itemText{
+  display: flex;
+  height: 25%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flip-card-front img {
+  background-color: white;
+  width: 85% !important;
+  border-radius: 20px !important;
+  height: 60% !important;
+  padding: 10px !important ;
+  margin: 8px  auto !important;
+  
+}
+
+.flip-card p {
+  margin-bottom: 0px !important;
+  margin-top: 10px !important;
+}
+
+.flip-card-front {
+  background-color: #cfcfcf;
+  color: rgb(54, 54, 54);
+  
+}
+  
+.flip-card-back {
+  background-color: #000000;
+  color: white;
+  transform: rotateY(180deg);
+  width: 100% !important;
+    padding: 20px 0px  ;
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column;
+  }
+  
+  .price{
+    color:rgb(10, 56, 116)  !important;
+  }
+  .des{
+    font-size: 13px;
+
+  }
+
+  .row1{
+
+    display: flex !important;
+  }
+  .row2{
+
+    display: flex !important;
+    
+  }
+  
+ 
